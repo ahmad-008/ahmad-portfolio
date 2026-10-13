@@ -1,4 +1,4 @@
-
+import { RxArrowTopRight } from "react-icons/rx";
 
 function Navbar() {
 
@@ -45,7 +45,19 @@ function Navbar() {
                     }
                 </ul>    
 
-
+                {/* Right Side */}
+                <div className="flex items-center self-stretch" >
+                    <a
+                        href="#contact"
+                        className="hidden xl:flex items-center gap-2 self-stretch 
+                        px-10 border-l border-dark/10 text-base font-bold
+                        captalize leading-[1.62] hover:text-accent 
+                        transition duration-400"
+                    >
+                        Let's Talk 
+                        <RxArrowTopRight/>
+                    </a>
+                </div>
 
 
             </nav>
