@@ -51,7 +51,7 @@ function Navbar() {
                 </ul>
 
                 {/* Right Side */}
-                <div className="flex items-center self-stretch" >
+                <div className="flex items-center self-stretch lg:mr-[5vw] xl:mr-0" >
                     <a
                         href="#contact"
                         className="hidden xl:flex items-center gap-2 self-stretch 
@@ -71,7 +71,7 @@ function Navbar() {
                         aria-expanded={isOpen}
                         onClick={() => setIsOpen(!isOpen)}
                         className="lg:hidden flex items-center
-                        justify-center gap-[7px] w-[60px] h-[73px] bg-dark cursor-pointer"
+                        justify-center w-[60px] h-[73px] bg-dark cursor-pointer"
 
                     >
                         {isOpen ? (
@@ -94,7 +94,7 @@ function Navbar() {
                 w-full bg-light p-[15px] border-b
                 border-dark/10 shadow-lg" >
                     {links.map((link)=>(
-                        <li key={link.name} className="border-b p-[15px] border-black/10
+                        <li key={link.name} className="border-b p-[15px] border-dark/10
                         last:border-b-0" >
                             <a
                                 href={link.href}
