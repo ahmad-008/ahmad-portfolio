@@ -17,7 +17,7 @@ function Navbar() {
 
 
     return (
-        <header className="relative border-b border-dark/10">
+        <header className="relative z-50 border-b border-dark/10">
 
             <nav className='flex items-center justify-between' >
                 {/* Logo cell */}
