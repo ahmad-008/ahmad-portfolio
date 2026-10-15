@@ -174,6 +174,24 @@ function Hero() {
 
                 </div>
 
+                {/* Outline title with reflection */}
+                
+                <div className="mt-10 lg:mt-16 lg:ml-[33.33%] whitespace-nowrap
+                font-bold uppercase leading-none select-none text-transparent
+                [-webkit-text-stroke:1px_rgba(17,17,17,0.25)] text-[8vw] md:text-[50px]
+                lg:text-[60px] xl:text-[79px] 2xl:text-[102px]" >
+                        <p>
+                            Full Stack Dev
+                        </p>
+
+                        <p
+                            aria-hidden="true"
+                            className="-mt-[0.2em] -scale-y-100 opacity-50 [mask-image:linear-gradient(to_bottom,transparent_30%,black)]"
+                        >
+                            Full Stack Dev
+                        </p>
+
+                </div>
 
 
 
