@@ -1,6 +1,16 @@
 import { RxArrowRight } from "react-icons/rx";
 
 
+// Circles under the statement: 3 stats and 1 short text
+const stats = [
+    {value: "1+", label: "Year of Coding"},
+    {text: "I enjoy turning complex problems into simple, clean and responsive web experiences."},
+    { value: "10+", label: "Projects Built" },
+    { value: "8+", label: "Technologies" },
+];
+
+
+
 function About() {
     return (
         <section id="about" className="px-[5vw] py-16 lg:py-24" >
@@ -45,20 +55,44 @@ function About() {
 
                     </a>
                     </div>
-                    
 
-
+                   
                 </div>
+
+                 {/* Stats circles */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 lg:mt-24" >
+                        {stats.map((stat, index) => (
+
+                            <div
+                            key={index}
+                            className="flex flex-col items-center justify-center w-full max-w-[300px]
+                            mx-auto aspect-square rounded-full border border-dark/10 text-center p-8"
+                            >
+                                {stat.text ? (
+                                    <p className="text-sm text-gray-text leading-relaxed" >{stat.text}</p>
+
+                                ) : (
+                                    <>
+                                    <h4 className="text-5xl xl:text-[64px] font-bold leading-none">{stat.value}</h4>
+                                    <span className="mt-3 text-xs uppercase tracking-wider text-gray-text" >{stat.label}</span>
+                                    </>
+
+                                )}
+
+                            </div>
+
+                        ))}
+
+                    </div>
+
 
             </div>
 
 
-
         </section>
-
-
-
     );
+
 }
+
 
 export default About;
