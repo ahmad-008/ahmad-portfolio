@@ -20,7 +20,7 @@ function Hero() {
         <section
             id="home"
             className="relative overflow-hidden px-[5vw] pt-5 xl:pt-20
-            pb-16 lg:pb-0 lg:min-h-[700px] xl:min-h-[850px]"
+            pb-16 lg:pb-0 lg:min-h-[calc(220px+28vw)] 2xl:min-h-[calc(240px+31vw)]"
         >
 
             <div className="max-w-[1320px] mx-auto" >

@@ -20,7 +20,7 @@ const skills = [
 function Skills() {
     return (
 
-        <section id="skills" className="py-16 lg:py-20" >
+        <section id="skills" className="py-12 lg:py-16" >
 
             {/* Skills slider */}
             <Swiper

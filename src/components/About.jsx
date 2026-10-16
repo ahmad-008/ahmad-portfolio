@@ -1,4 +1,5 @@
 import { RxArrowRight } from "react-icons/rx";
+import aboutImg from "../assets/Image.png";
 
 
 // Circles under the statement: 3 stats and 1 short text
@@ -21,14 +22,21 @@ function About() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
 
                     {/* Label */}
-                    <div>
+                    <div className="flex flex-col items-start gap-6">
                         <span className="inline-block px-3 py-1 border border-dark/10 text-xs
                     font-bold uppercase tracking-wider" >
                             About Me
                         </span>
+
+                        <img src={aboutImg} 
+                            alt="Ahmad Ali"
+                            className="w-full max-w-[360px] aspect-[4/5] object-cover rounded-[20px]"
+                        />
+                        
+
                     </div>
 
-                    <div className="lg:col-span-2">
+                    <div className="lg:col-span-2 pt-10 ml-12">
                         {/* Statement and button */}
                     <p className="indent-10 lg:indent-16 text-xl
                     sm:text-2xl xl:text-[28px] font-medium leading-[1.45]" >
