@@ -1,5 +1,6 @@
 import InfiniteMenu from "./InfiniteMenu";
 import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
 
 // Projects: sphere shows image, title, description. Popup shows everything.
@@ -9,7 +10,7 @@ const projects = [
         liveUrl: "https://one-pager-brown.vercel.app/",
         title: "One Pager",
         description: "Company website with login, signup and contact, built on the MERN stack.",
-        githubUrl: "",
+        githubUrl: "https://github.com/ahmad-008/one-pager",
         tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
         features: [
             "User signup and login",
@@ -23,7 +24,7 @@ const projects = [
         liveUrl: "https://mystudyally.com/",
         title: "My Study Ally",
         description: "Tutoring agency website with secure, rate-limited forms. Built with Next.js.",
-        githubUrl: "",
+        githubUrl: "https://github.com/mystudyally1/mystudyally-website",
         tech: ["React", "Next.js", "Tailwind CSS", "Shadcn UI", "Cloudflare", "Express", "Node.js"],
         features: [
             "Cloudflare-protected forms",
@@ -36,7 +37,7 @@ const projects = [
         liveUrl: "https://freelancercrmbd.vercel.app/",
         title: "Freelancer CRM",
         description: "Dashboard for freelancers to manage leads, revenue and proposals.",
-        githubUrl: "",
+        githubUrl: "https://github.com/ahmad-008/freelancercrm",
         tech: ["Next.js", "React", "Tailwind CSS", "Radix UI", "Node.js", "Supabase"],
         features: [
             "Lead and follow-up tracking",
@@ -90,17 +91,11 @@ function Projects() {
 
             {/* Project popup (temporary test) */}
             {selectedProject && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-dark/70" >
-                    <div className="bg-light p-8 rounded-[20px]" >
-                        <h3 className="text-2xl font-bold" >
-                            {selectedProject.title}
-                        </h3>
+                <ProjectModal
+                    project={selectedProject}
+                    onClose={() => setSelectedProject(null)}
 
-                        <button onClick={() => setSelectedProject(null)} className="mt-4 underline" >
-                            Close
-                        </button>
-                    </div>
-                </div>
+                />
 
 
 
