@@ -1,25 +1,42 @@
 import InfiniteMenu from "./InfiniteMenu";
 
 
-// Projects shown on the sphere
+// Projects: sphere shows image, title, description. Popup shows everything.
 const projects = [
     {
         image: "/projects/one-pager.png",
         link: "https://one-pager-brown.vercel.app/",
         title: "One Pager",
         description: "Company website with login, signup and contact, built on the MERN stack.",
+        githubUrl: "",
+        tech: ["React", "Tailwind CSS" , "Node.js", "Express", "MomgoDB"],
+        features: [
+            "User signup and login",
+      "Contact form saved to the database",
+      "Backend built with MVC architecture",
+      "Fully responsive design",
+        ],
     },
     {
         image: "/projects/study-ally.png",
         link: "https://mystudyally.com/",
         title: "My Study Ally",
         description: "Tutoring agency website with secure, rate-limited forms. Built with Next.js.",
+        githubUrl: "",
+        tech: ["React", "Next.js" ,"Tailwind CSS" , "Shadcn UI" ,"Cloudflare", "Express", "Node.js"],
+        features : [
+            "Cloudflare-protected forms", 
+            "IP rate limiting",
+            "responsive design"
+        ],
     },
     {
         image: "/projects/freelancer-crm.png",
         link: "https://freelancercrmbd.vercel.app/",
         title: "Freelancer CRM",
         description: "Dashboard for freelancers to manage leads, revenue and proposals.",
+        githubUrl:"",
+        tech: ["Next.js", "React", "Tailwind CSS", "Radix UI", "Node.js", "Supabase"]
     },
 ];
 
