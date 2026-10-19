@@ -30,7 +30,8 @@ function ProjectModal({ project, onClose }) {
                 role="dialog"
                 aria-modal='true'
                 aria-label={project.title}
-                className="relative w-full max-w-[720px] max-h-[90svh] overflow-y-auto bg-light
+                className="relative w-full max-w-[720px] max-h-[90svh] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+                 bg-light
                 rounded-[20px] p-5 sm:p-8"
 
             >
