@@ -1,11 +1,22 @@
 import { RxCross2, RxArrowTopRight } from "react-icons/rx";
 import { FaGithub } from "react-icons/fa";
 import { MdCheck } from "react-icons/md";
+import { useEffect } from "react";
+
 
 
 
 
 function ProjectModal({ project, onClose }) {
+
+    useEffect(()=>{
+        document.body.style.overflow = "hidden";
+
+        return () =>{
+            document.body.style.overflow = "";
+        };
+    }, []);
+
     return (
 
         // Dark overlay (click outside the box to close)
