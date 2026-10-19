@@ -1,3 +1,29 @@
+import InfiniteMenu from "./InfiniteMenu";
+
+
+// Projects shown on the sphere
+const projects = [
+    {
+        image: "/projects/one-pager.png",
+        link: "https://one-pager-brown.vercel.app/",
+        title: "One Pager",
+        description: "Company website with login, signup and contact, built on the MERN stack.",
+    },
+    {
+        image: "/projects/study-ally.png",
+        link: "https://mystudyally.com/",
+        title: "My Study Ally",
+        description: "Tutoring agency website with secure, rate-limited forms. Built with Next.js.",
+    },
+    {
+        image: "/projects/freelancer-crm.png",
+        link: "https://freelancercrmbd.vercel.app/",
+        title: "Freelancer CRM",
+        description: "Dashboard for freelancers to manage leads, revenue and proposals.",
+    },
+];
+
+
 
 function Projects() {
     return (
@@ -19,8 +45,19 @@ function Projects() {
             </div>
 
             {/* Full-screen sphere area */}
-            <div className='relative mt-8 w-full h-[75svh] lg:h-svh bg-light-gray' >
-                Sphere goes here
+            <div className='relative mt-8 w-full h-[75svh] lg:h-svh bg-dark' >
+                
+                <InfiniteMenu
+                    items={projects}
+                    theme="dark"
+                    accentColor="#ff5c00"
+                    autoplay={3}
+                    grayscale={true}
+                    dim={0.5}
+                />
+
+
+
             </div>
 
 
