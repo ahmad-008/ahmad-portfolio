@@ -1,8 +1,47 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { useState } from "react";
+
+
 
 
 function Contact() {
+
+     // Form status: "", "sending", "success" or "error"
+     const [status, setStatus] = useState("");
+
+
+     // Send the form data to Web3Forms
+     const handleSubmit = async (event) => {
+        event.preventDefault();
+        setStatus("sending");
+
+        const formData = new FormData(event.target);
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+
+        try{
+
+            const response = await fetch( "https://api.web3forms.com/submit",{
+                method: "POST",
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (data.success){
+                setStatus("success");
+                event.target.reset();
+            }else{
+                setStatus("error");
+            }
+
+        } catch {
+            setStatus("error");
+        }
+
+     };
+
+
 
     // Contact details shown on the left
     const details = [
@@ -69,7 +108,7 @@ function Contact() {
                 </div>
 
                 {/*Right Side: form */}
-                <form className="grid gap-5 sm:grid-cols-2" >
+                <form  onSubmit={handleSubmit} className="grid gap-5 sm:grid-cols-2" >
 
                     {/* Name */}
                     <label className="flex flex-col gap-2 text-sm font-bold" >
@@ -126,6 +165,22 @@ function Contact() {
 
                         Send Message
                     </button>
+
+                    
+                    {/* Status message */}
+                        {status === "success" && (
+                            <p className="sm:col-span-2 text-sm font-bold text-green-600" >
+                                Thanks! Your message has been sent. I'll get back to you soon.
+                            </p>
+
+                        )}
+
+                        {status === "error" &&(
+                            <p className="sm:col-span-2 text-sm font-bold text-red-600" >
+                                Something wnet wrong. Please try again or email me directly.
+                            </p>
+                        )}    
+
 
 
 
