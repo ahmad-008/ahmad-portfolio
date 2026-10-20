@@ -30,13 +30,13 @@ function About() {
 
                         <img src={aboutImg} 
                             alt="Ahmad Ali"
-                            className="w-full max-w-[360px] aspect-[4/5] object-cover rounded-[20px]"
+                            className="self-center lg:self-start w-full max-w-[360px] aspect-[4/5] object-cover rounded-[20px]"
                         />
                         
 
                     </div>
 
-                    <div className="lg:col-span-2 pt-10 ml-12">
+                    <div className="lg:col-span-2 lg:pt-14 lg:ml-12">
                         {/* Statement and button */}
                     <p className="indent-10 lg:indent-16 text-xl
                     sm:text-2xl xl:text-[28px] font-medium leading-[1.45]" >
@@ -81,7 +81,7 @@ function About() {
 
                                 ) : (
                                     <>
-                                    <h4 className="text-5xl xl:text-[64px] font-bold leading-none">{stat.value}</h4>
+                                    <h4 className="text-5xl xl:text-[64px] font-bold leading-none ">{stat.value}</h4>
                                     <span className="mt-3 text-xs uppercase tracking-wider text-gray-text" >{stat.label}</span>
                                     </>
 
