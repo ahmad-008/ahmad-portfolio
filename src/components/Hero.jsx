@@ -117,6 +117,7 @@ function Hero() {
 
                         <a
                             href="/Ahmad Ali CV.pdf"
+                            target="_blank"
                             className="inline-flex items-center ml-1 gap-2 py-3.5 px-4 sm:py-[17px] sm:px-[35px] rounded-full border 
                             border-dark bg-light text-dark hover:bg-dark hover:text-light text-sm sm:text-base font-bold 
                             transition duration-300"
