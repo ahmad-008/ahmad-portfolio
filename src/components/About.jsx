@@ -1,5 +1,5 @@
 import { RxArrowRight } from "react-icons/rx";
-import aboutImg from "../assets/Image.png";
+import aboutImg from "../assets/Image.jpg";
 
 
 // Circles under the statement: 3 stats and 1 short text

@@ -24,7 +24,7 @@ const projects = [
         liveUrl: "https://mystudyally.com/",
         title: "My Study Ally",
         description: "Tutoring agency website with secure, rate-limited forms. Built with Next.js.",
-        githubUrl: "https://github.com/mystudyally1/mystudyally-website",
+        githubUrl: "", // private repo
         tech: ["React", "Next.js", "Tailwind CSS", "Shadcn UI", "Cloudflare", "Express", "Node.js"],
         features: [
             "Cloudflare-protected forms",
@@ -37,7 +37,7 @@ const projects = [
         liveUrl: "https://freelancercrmbd.vercel.app/",
         title: "Freelancer CRM",
         description: "Dashboard for freelancers to manage leads, revenue and proposals.",
-        githubUrl: "https://github.com/ahmad-008/freelancercrm",
+        githubUrl: "", // private repo
         tech: ["Next.js", "React", "Tailwind CSS", "Radix UI", "Node.js", "Supabase"],
         features: [
             "Lead and follow-up tracking",
