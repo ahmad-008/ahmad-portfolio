@@ -31,8 +31,8 @@ function Footer() {
              {/* Big faded name */}
              <h2
                 aria-hidden="true"
-                className="mt-10 -ml-6 md:-ml-6 text-center whitespace-nowrap font-bold leading-none select-none
-                text-[17vw] 2xl:text-[240px] bg-linear-to-b from-dark/15 to-transparent bg-clip-text text-transparent"
+                className="mt-10 -ml-6 text-center whitespace-nowrap font-bold leading-none select-none
+                text-[14vw] 2xl:text-[200px] bg-linear-to-b from-dark/15 to-transparent bg-clip-text text-transparent"
              
              >
                 Ahmad Ali
