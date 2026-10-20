@@ -4,6 +4,7 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import { useEffect } from "react";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Skills/>
           <About/>
           <Projects/>
+          <Contact/>
         </main>
         
       
