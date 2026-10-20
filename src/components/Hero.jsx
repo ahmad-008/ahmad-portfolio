@@ -1,6 +1,5 @@
 import { RxArrowTopRight } from "react-icons/rx";
 import profilepic from "../assets/profile-pic.png";
-import profilebg from "../assets/profile-pic-bg.png";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import contactRing from "../assets/contact-me-txt.svg";
@@ -88,8 +87,8 @@ function Hero() {
                 <div className="relative w-[85%] max-w-[450px] -ml-[5vw] mt-6 lg:absolute lg:left-0 
                 lg:ml-0 lg:mt-0 lg:w-[30vw] 2xl:w-[34vw] lg:max-w-[652px]">
 
-                    <img src={profilebg} alt="" className="w-full" />
-                    <img src={profilepic} alt="Ahmad Ali" className="absolute bottom-1 left-[23%] w-[77%]" />
+                    {/* Same box size as the old black shape, photo fits inside it */}
+                    <img src={profilepic} alt="Ahmad Ali" className="w-full aspect-[652/594] object-contain object-bottom" />
                 </div>
 
                 {/* Intro and Buttons */}
